@@ -1,4 +1,3 @@
-import { Sorter } from './Sorter';
 import { NumbersCollection } from './NumbersCollection';
 import { CharachterCollection } from './CharactersCollection';
 import { LinkedList } from './LinkedList';
@@ -7,13 +6,11 @@ import { LinkedList } from './LinkedList';
 // Handle swaping in different way. *Strings are immutable
 
 const numbersCollection= new NumbersCollection( [10, -3, -5, 0])
-const numberSorter = new Sorter(numbersCollection);
-numberSorter.sort()
+numbersCollection.sort()
 console.log(numbersCollection.data);
 
 const charachterCollection = new CharachterCollection("knight")
-const stringSorter = new Sorter(charachterCollection);
-stringSorter.sort()
+charachterCollection.sort()
 console.log(charachterCollection.data);
 
 const linkedList = new LinkedList()
@@ -21,6 +18,5 @@ linkedList.add(10)
 linkedList.add(-3)
 linkedList.add(-5)
 linkedList.add(0)
-const linkedListSorter = new Sorter(linkedList);
-linkedListSorter.sort()
+linkedList.sort()
 linkedList.print()
